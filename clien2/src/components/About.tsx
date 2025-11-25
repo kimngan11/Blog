@@ -1,5 +1,5 @@
 import { Heart, MapPin, Mail, Book, Coffee, Camera } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+
 
 interface AboutProps {
   onNavigateHome: () => void;
@@ -75,31 +75,7 @@ export function About({ onNavigateHome }: AboutProps) {
           </div>
         </div>
 
-        {/* Image Gallery */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
-          <h2 className="text-pink-600 mb-6">
-            Khoảnh khắc yêu thích
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="rounded-lg overflow-hidden">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1617599137346-98e7c279ebe6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbiUyMGNoZXJyeSUyMGJsb3Nzb218ZW58MXx8fHwxNzYyODI4MzYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Cherry Blossom"
-                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-              />
-              <p className="mt-2 text-sm text-gray-600 text-center">Mùa hoa anh đào - Khoảnh khắc đẹp nhất năm</p>
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1621139151681-5ac8d73128ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbiUyMHN0cmVldCUyMHRva3lvfGVufDF8fHx8MTc2MjgyODM2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Tokyo Street"
-                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-              />
-              <p className="mt-2 text-sm text-gray-600 text-center">Phố phường Tokyo về đêm</p>
-            </div>
-          </div>
-        </div>
-
+        
         {/* What I Share */}
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
           <h2 className="text-pink-600 mb-6">

@@ -1,4 +1,4 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
+
 
 interface BlogCardProps {
   id: number;
@@ -18,11 +18,11 @@ export function BlogCard({ title, excerpt, image, date, category, readTime, onCl
       className="group cursor-pointer bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
     >
       <div className="relative h-48 overflow-hidden">
-        <ImageWithFallback
+        
           src={image}
           alt={title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        />
+      
         <div className="absolute top-4 left-4">
           <span className="px-3 py-1 bg-pink-500 text-white rounded-full text-sm">
             {category}

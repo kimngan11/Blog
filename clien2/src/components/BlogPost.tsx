@@ -1,5 +1,4 @@
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface BlogPostProps {
   title: string;
@@ -51,11 +50,11 @@ export function BlogPost({ title, content, image, date, category, readTime, auth
         </div>
         
         <div className="rounded-lg overflow-hidden mb-8">
-          <ImageWithFallback
+          
             src={image}
             alt={title}
             className="w-full h-96 object-cover"
-          />
+       
         </div>
         
         <article className="prose prose-lg max-w-none">
